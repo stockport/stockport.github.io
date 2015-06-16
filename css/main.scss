@@ -84,8 +84,9 @@
 
 .option-box {
   min-height: 300px;
-  max-height: 600px;
+  // max-height: 600px;
   padding: 20px;
+  margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
 }
@@ -129,22 +130,34 @@
   margin: auto;
 }
 
-.feeling-suicidal {
+//Generic
+
+.blue {
   background-color: #01807E;
 }
 
-.concerned-about-someone {
+.white {
+  background-color: #fff;
+}
+
+.orange {
   background-color: #F05D22;
 }
 
-.ending-life-past {
+.grey {
   background-color: #B5B5B5;
 }
 
-.bereaved-by-suicide {
+.yellow {
   background-color: #BFB900;
 }
 
+.bubble {
+  padding: 20px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 15px;
+  position: relative;
+}
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
