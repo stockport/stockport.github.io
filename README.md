@@ -11,5 +11,7 @@ This project will be served using Github Pages, and developed using Jekyll for t
 
 To run a copy of this project locally:
 
-# TODO  
-``fill this in later``
+ensure you have the [jekyll](http://jekyllrb.com/) blogging platform installed  
+```git clone``` from the link on the right and ```cd ``` into the folder  
+```jekyll serve```  
+navigate to ```localhost:4000```

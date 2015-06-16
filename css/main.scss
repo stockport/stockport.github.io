@@ -82,15 +82,6 @@
   padding: 10px;
 }
 
-.option-box {
-  min-height: 300px;
-  // max-height: 600px;
-  padding: 20px;
-  margin-bottom: 10px;
-  -webkit-border-radius: 15px;
-  position: relative;
-}
-
 .option-image {
   width: 326px;
   height: 400px;
@@ -131,6 +122,15 @@
 }
 
 //Generic
+
+.option-box {
+  min-height: 300px;
+  // max-height: 600px;
+  padding: 20px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 15px;
+  position: relative;
+}
 
 .blue {
   background-color: #01807E;
