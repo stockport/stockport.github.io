@@ -3,6 +3,11 @@
 ---
 @charset "utf-8";
 
+.about {
+  position: relative;
+  max-width: 70%;
+  display: inline-block;
+}
 .banner {
   margin-top: 1%;
   padding: 5px;
@@ -48,6 +53,13 @@
   font-weight: bold;
 }
 
+.scales {
+  max-width: 25%;
+  max-height: 250px;
+  float: right;
+  display: inline-block;
+}
+
 //Homepage
 
 .home-message p {
@@ -88,6 +100,19 @@
   margin-right:auto;
 }
 
+.preview {
+  max-width: 40%;
+  display: inline-block;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+
+.preview-text {
+  float: right;
+  max-width: 55%;
+  display: inline-block;
+}
+
 .btn.btn-default.click-here {
   font-weight: bold;
   color: black;
@@ -113,6 +138,15 @@
 
 .blue {
   background-color: #01807E;
+}
+
+.blue-text {
+  color: #01807E;
+  font-weight: bold;
+}
+
+.light-blue {
+  background-color: #0077BF;
 }
 
 .white {
@@ -155,6 +189,7 @@
 }
 
 .side {
+  clear: right;
   float: right;
 }
 
