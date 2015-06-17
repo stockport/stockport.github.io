@@ -5,13 +5,13 @@ This project aims to provide an online source of information and support for tho
 
 
 
-This project will be served using Github Pages, and developed using Jekyll for templating.
+This project will be published using Github Pages, and developed using Jekyll for templating.
 
 
 
 To run a copy of this project locally:
 
-ensure you have the [jekyll](http://jekyllrb.com/) blogging platform installed  
-```git clone``` from the link on the right and ```cd ``` into the folder  
-```jekyll serve```  
+Ensure you have the [jekyll](http://jekyllrb.com/) blogging platform installed
+```git clone``` from the link on the right and ```cd ``` into the folder
+```jekyll serve```
 navigate to ```localhost:4000```
