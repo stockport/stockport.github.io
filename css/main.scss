@@ -209,6 +209,64 @@
   float: right;
 }
 
+// -------------
+// Local help table
+
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  box-pack: justify;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  line-height: 1.25;
+}
+
+.table-header {
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.table-header-item {
+  background-color: #F05D22;
+}
+
+.table-row {
+  display: flex;
+  flex-flow: row-nowrap;
+  width: 100%;
+  &:nth-of-type(even) { background-color: #F0F7F7; }
+  &:nth-of-type(odd) { background-color: #C7E2E2; }
+}
+
+.table-row-item {
+  padding: 1%;
+  align-items: center;
+  display: box;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  padding-left: 0.3em;
+  word-break: break-word;
+  border: 3px solid white;
+}
+
+.service {
+  text-align: center;
+  border-radius: 15px 0 0 15px;
+}
+
+.contact {
+  border-radius: 0 15px 15px 0;
+}
+
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
