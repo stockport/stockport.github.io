@@ -3,6 +3,10 @@
 ---
 @charset "utf-8";
 
+.container-fluid {
+  background-color: #fff;
+}
+
 .about {
   position: relative;
   max-width: 70%;
@@ -46,11 +50,14 @@
   color: #fff;
 }
 
-.navbar-header {
-  background-color: #01807E;
-  border-radius: 15px;
-  text-align: center;
-  font-weight: bold;
+.navbar-default {
+  border-style: none;
+}
+
+.navbar-toggle {
+  left: 50%;
+  margin-left: -22px;
+  float: none;
 }
 
 .scales {
@@ -69,11 +76,12 @@
 }
 
 .option-image {
-  width: 326px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   -webkit-border-radius: 15px;
   display: block;
   margin: auto;
+  overflow: hidden;
 }
 
 @media all and (max-width: 600px) {
