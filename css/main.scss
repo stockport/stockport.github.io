@@ -52,7 +52,6 @@
 
 .navbar-default {
   border-style: none;
-  margin-bottom: 0px;
 }
 
 .navbar-toggle {
@@ -112,6 +111,9 @@
     .col-xs-6 {
       padding: 5px;
       margin-bottom: -10px;
+    }
+    .navbar-default {
+      margin-bottom: 0px;
     }
 }
 
