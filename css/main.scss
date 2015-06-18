@@ -227,7 +227,6 @@
   color: white;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1%;
 }
 
 .table-header-item {
@@ -243,6 +242,7 @@
 }
 
 .table-row-item {
+	&:nth-of-type(1) { font-weight: bold; }
   padding: 1%;
   align-items: center;
   display: box;
@@ -266,6 +266,71 @@
 .contact {
   border-radius: 0 15px 15px 0;
 }
+
+// ----------------
+// safety plan page
+
+.print-box {
+	display: block;
+	margin: auto;
+	max-width: 20%;
+}
+
+.safety-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+}
+
+.safety-box {
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	width: 350px;
+	min-height: 50px;
+	min-width: 50px;
+	margin: 10px;
+}
+
+.safety-header {
+  color: #01807E;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.safety-text {
+	display: flex;
+	height: 250px;
+	border: 2px solid grey;
+	border-radius: 15px;
+}
+
+.safety-tooltip {
+	background-color: #01807E;
+	color: white;
+	height: 100px;
+	width: 100px;
+  position: absolute;
+  z-index: 1000
+}
+
+.safety-mark {
+	max-height: 25px;
+	max-width: 25px;
+	float: right;
+	&:hover .safety-tooltip {
+		display: block;
+		border: 12px solid black;
+	}
+}
+
+
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
