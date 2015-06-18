@@ -10,4 +10,6 @@ To run a copy of this project locally:
 Ensure you have the [jekyll](http://jekyllrb.com/) blogging platform installed  
 ```git clone``` from the link on the right and ```cd ``` into the folder  
 ```jekyll serve```  
-navigate to ```localhost:4000```  
+navigate to ```localhost:4000```
+
+The site is also on github pages: [stockport](http://stockport.github.io/)
