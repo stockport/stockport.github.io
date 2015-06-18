@@ -76,17 +76,37 @@
 }
 
 .option-image {
-  width: 100%;
-  height: 100%;
-  -webkit-border-radius: 15px;
-  display: block;
-  margin: auto;
+  max-height: 400px;
   overflow: hidden;
+}
+
+.homepage-image {
+  -webkit-border-radius: 15px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.homepage-box {
+  padding: 20px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 15px;
+  position: relative;
+  min-height: 253px;
 }
 
 @media all and (max-width: 600px) {
     .option-image {
         display:none;
+    }
+    p.option-text {
+      min-height: 154px;
+    }
+    p.home-message {
+      display: none;
     }
 }
 
