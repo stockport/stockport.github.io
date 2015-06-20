@@ -107,17 +107,21 @@
         display:none;
     }
     p.option-text {
-      min-height: 154px;
+      min-height: 120px;
     }
     p.home-message {
       display: none;
     }
     .col-xs-6 {
-      padding: 5px;
+      padding: 2px;
       margin-bottom: -10px;
     }
     .navbar-default {
       margin-bottom: 0px;
+    }
+    .homepage-box {
+      padding: 10px;
+      min-height: 200px;
     }
 }
 
