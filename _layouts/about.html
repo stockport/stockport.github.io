@@ -7,11 +7,15 @@
 
     {% include header.html %}
 
-      {{ content }}
+	  {{ content }}
+
+	  <div class="side col-md-3">
       {% include support.html %}
       {% include recommendedresources.html %}
       {% include halflogo.html %}
-      {% include libraries.html %}
+    </div>
+
+    {% include libraries.html %}
       
   </body>
 
