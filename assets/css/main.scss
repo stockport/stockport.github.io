@@ -18,7 +18,7 @@
 
 .emergency {
   background-color: #BF004B;
-  border-radius: 10px;
+  border-radius: 30px;
   text-weight: bold;
   color: white;
   margin: auto;
@@ -38,7 +38,7 @@
 
 .navbar-collapse {
   background-color: #01807E;
-  border-radius: 15px;
+  border-radius: 30px;
   text-align: center;
   font-weight: bold;
 }
@@ -90,7 +90,7 @@
 }
 
 .homepage-image {
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 30px;
   overflow: hidden;
   display: block;
   margin-left: auto;
@@ -102,7 +102,7 @@
 .homepage-box {
   padding: 20px;
   margin-bottom: 10px;
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 30px;
   position: relative;
   min-height: 253px;
 }
@@ -149,7 +149,7 @@
 .preview {
   max-width: 40%;
   display: inline-block;
-  border-radius: 15px;
+  border-radius: 30px;
   vertical-align: middle;
 }
 
@@ -169,7 +169,7 @@
 .safetyplan {
   width:100%;
   min-height:200px;
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 30px;
   resize: none;
   outline: none;
   border-style: solid;
@@ -185,14 +185,14 @@
 //Generic
 
 .banner-image {
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 30px;
   margin-bottom: 15px;
 }
 
 .option-box {
   padding: 20px;
   margin-bottom: 10px;
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 30px;
   position: relative;
 }
 
@@ -237,7 +237,7 @@
 .bubble {
   padding: 10px;
   margin-bottom: 10px;
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 30px;
   position: relative;
 }
 
@@ -308,11 +308,11 @@
 
 .service {
   text-align: center;
-  border-radius: 15px 0 0 15px;
+  border-radius: 30px 0 0 30px;
 }
 
 .contact {
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 30px 30px 0;
 }
 
 // ----------------
@@ -332,7 +332,7 @@
   align-content: center;
   align-items: center;
   background-color: #F2F2F2;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .safety-box {
@@ -356,7 +356,7 @@
 	display: flex;
 	height: 250px;
 	border: 2px solid grey;
-	border-radius: 15px;
+	border-radius: 30px;
 }
 
 .safety-tooltip {
