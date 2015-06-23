@@ -113,10 +113,11 @@ a.option-link:hover {
 
 .option-text {
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   min-height: 40px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .option-button {
@@ -145,6 +146,8 @@ a.option-link:hover {
   color: black;
   display: block;
   margin: auto;
+  margin-top: 10px;
+  -webkit-border-radius: 30px;
 }
 
 .safetyplan {
@@ -166,6 +169,9 @@ a.option-link:hover {
 @media all and (max-width: 600px) {
     .option-image {
         display:none;
+    }
+    .banner-image {
+      display: none;
     }
     p.option-text {
       min-height: 80px;
@@ -192,6 +198,9 @@ a.option-link:hover {
 .banner-image {
   -webkit-border-radius: 30px;
   margin-bottom: 15px;
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .option-box {
