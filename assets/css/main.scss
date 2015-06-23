@@ -74,6 +74,10 @@
 
 //Homepage
 
+a.option-link:hover {
+  background-color: red;
+}
+
 .lightgrey {
 	background-color: #B5B5B5;
 }
@@ -85,7 +89,7 @@
 }
 
 .option-image {
-  max-height: 400px;
+  max-height: 411px;
   overflow: hidden;
 }
 
@@ -107,35 +111,12 @@
   min-height: 253px;
 }
 
-@media all and (max-width: 600px) {
-    .option-image {
-        display:none;
-    }
-    p.option-text {
-      min-height: 120px;
-    }
-    p.home-message {
-      display: none;
-    }
-    .col-xs-6 {
-      padding: 2px;
-      margin-bottom: -10px;
-    }
-    .navbar-default {
-      margin-bottom: 0px;
-    }
-    .homepage-box {
-      padding: 10px;
-      min-height: 200px;
-    }
-}
-
 .option-text {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  min-height: 100px;
-  margin-top: 10px;
+  min-height: 40px;
+  margin-top: 5px;
 }
 
 .option-button {
@@ -180,6 +161,30 @@
 .safety {
   padding: 10px;
   margin-top: 20px;
+}
+
+@media all and (max-width: 600px) {
+    .option-image {
+        display:none;
+    }
+    p.option-text {
+      min-height: 80px;
+      font-size: 15px;
+    }
+    p.home-message {
+      display: none;
+    }
+    .col-xs-6 {
+      padding: 2px;
+      margin-bottom: -10px;
+    }
+    .navbar-default {
+      margin-bottom: 0px;
+    }
+    .homepage-box {
+      padding: 10px;
+      min-height: 160px;
+    }
 }
 
 //Generic
