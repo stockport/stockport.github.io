@@ -7,10 +7,14 @@
 
     {% include header.html %}
 
-      {{ content }}
-      {% include emergency.html %}
-      {% include recommendedresources.html %}
-      {% include libraries.html %}
+		{{ content }}
+
+		<div class="side col-md-3">
+			{% include emergency.html %}
+			{% include recommendedresources.html %}
+		</div>
+		
+		{% include libraries.html %}
       
   </body>
 
