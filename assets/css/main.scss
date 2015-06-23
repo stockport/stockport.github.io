@@ -28,6 +28,7 @@
 .hotline {
   padding: 5px;
   padding-right: 15px;
+  height: 100%;
 }
 
 .logo {
@@ -50,12 +51,18 @@
 
 .navbar-default {
   border-style: none;
+  background-color: #fff;
 }
 
 .navbar-toggle {
   left: 50%;
   margin-left: -22px;
   float: none;
+}
+
+.navbar {
+  margin-bottom: 10px;
+  min-height: 0px;
 }
 
 .scales {
