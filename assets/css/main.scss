@@ -95,10 +95,6 @@
 // -------------
 //Homepage
 
-a.option-link:hover {
-  background-color: red;
-}
-
 .lightgrey {
 	background-color: #B5B5B5;
 }
@@ -110,7 +106,6 @@ a.option-link:hover {
 }
 
 .option-image {
-  max-height: 411px;
   overflow: hidden;
 }
 
@@ -129,7 +124,7 @@ a.option-link:hover {
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
-  min-height: 253px;
+  min-height: 458px;
 }
 
 .option-text {
@@ -146,12 +141,8 @@ a.option-link:hover {
 	margin-bottom: 5px;
 }
 
-.option-button {
-  bottom: 10px;
-  left:0;
-  right:0;
-  margin-left:auto;
-  margin-right:auto;
+a.option-link:hover {
+  text-decoration: none;
 }
 
 .preview {
@@ -169,11 +160,13 @@ a.option-link:hover {
 
 .btn.btn-default.click-here {
   font-weight: bold;
+  font-size: 18px;
   color: black;
   display: block;
   margin: auto;
   margin-top: 10px;
   -webkit-border-radius: 15px;
+  width: 100%;
 }
 
 .safetyplan {
@@ -453,7 +446,18 @@ div>p {
 	display: block;
 }
 
-
+@media print {
+  .site-header {
+    display: none;
+  }
+  .bubble {
+    display: none;
+  }
+  .safety-mark {
+    display: none;
+  }
+  @page {size: landscape}
+}
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
