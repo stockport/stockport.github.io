@@ -94,10 +94,6 @@
 // -------------
 //Homepage
 
-a.option-link:hover {
-  background-color: red;
-}
-
 .lightgrey {
 	background-color: #B5B5B5;
 }
@@ -128,7 +124,7 @@ a.option-link:hover {
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
-  min-height: 253px;
+  min-height: 458px;
 }
 
 .option-text {
@@ -452,7 +448,18 @@ div>p {
 	display: block;
 }
 
-
+@media print {
+  .site-header {
+    display: none;
+  }
+  .bubble {
+    display: none;
+  }
+  .safety-mark {
+    display: none;
+  }
+  @page {size: landscape}
+}
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
