@@ -140,12 +140,8 @@
 	margin-bottom: 5px;
 }
 
-.option-button {
-  bottom: 10px;
-  left:0;
-  right:0;
-  margin-left:auto;
-  margin-right:auto;
+a.option-link:hover {
+  text-decoration: none;
 }
 
 .preview {
@@ -163,11 +159,13 @@
 
 .btn.btn-default.click-here {
   font-weight: bold;
+  font-size: 18px;
   color: black;
   display: block;
   margin: auto;
   margin-top: 10px;
   -webkit-border-radius: 15px;
+  width: 100%;
 }
 
 .safetyplan {
