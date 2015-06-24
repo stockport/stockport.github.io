@@ -9,7 +9,7 @@
 
 .about {
   position: relative;
-  max-width: 70%;
+  max-width: 75%;
   display: inline-block;
 }
 .banner {
@@ -36,17 +36,44 @@
   padding-left: 15px;
 }
 
+
+.scales {
+  max-width: 25%;
+  max-height: 150px;
+  float: right;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+// -------------
+// NavBar
+
+
+
+.navbar {
+  margin-bottom: 10px;
+  min-height: 0px;
+}
+
 .navbar-collapse {
   background-color: #01807E;
   border-radius: 15px;
   text-align: center;
-  font-weight: bold;
+}
+
+.navbar-nav.nav-justified > li {
+    float:none;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #fff;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: #F05D22;
+  color: white;
 }
 
 .navbar-default {
@@ -60,18 +87,11 @@
   float: none;
 }
 
-.navbar {
-  margin-bottom: 10px;
-  min-height: 0px;
+.searchbox {
+	border-radius: 5px;
 }
 
-.scales {
-  max-width: 25%;
-  max-height: 150px;
-  float: right;
-  display: inline-block;
-}
-
+// -------------
 //Homepage
 
 a.option-link:hover {
@@ -197,6 +217,7 @@ a.option-link:hover {
     }
 }
 
+// -------------
 //Generic
 
 .banner-image {
