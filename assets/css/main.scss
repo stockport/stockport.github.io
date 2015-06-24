@@ -142,6 +142,7 @@ a.option-link:hover {
 
 .option-title {
 	text-align: center;
+	margin-bottom: 5px;
 }
 
 .option-button {
@@ -306,10 +307,18 @@ h4 {
 	font-size: 12px;
 }
 
+div>p {
+	margin-bottom: 5px;
+}
+
 .side {
 	font-size: 12px;
   clear: right;
   float: right;
+}
+
+.underlined {
+	text-decoration: underline;
 }
 
 // -------------
@@ -373,7 +382,7 @@ h4 {
   border-radius: 0 15px 15px 0;
 }
 
-// ----------------
+// ---------------
 // safety plan page
 
 .print-box {
@@ -435,6 +444,12 @@ h4 {
 		display: block;
 		border: 12px solid black;
 	}
+}
+
+.safety-ring {
+	max-width: 70%;
+	margin: auto;
+	display: block;
 }
 
 
