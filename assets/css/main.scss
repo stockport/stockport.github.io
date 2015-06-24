@@ -9,18 +9,16 @@
 
 .about {
   position: relative;
-  max-width: 70%;
+  max-width: 75%;
   display: inline-block;
 }
 .banner {
-  margin-top: 1%;
   padding: 5px;
-  font-weight: bold;
 }
 
 .emergency {
   background-color: #BF004B;
-  border-radius: 10px;
+  border-radius: 15px;
   text-weight: bold;
   color: white;
   margin: auto;
@@ -28,30 +26,59 @@
 }
 
 .hotline {
-  text-align: center;
-  margin-top: 1%;
   padding: 5px;
   padding-right: 15px;
+  height: 100%;
 }
 
 .logo {
-  max-width: 75%;
+  max-width: 50%;
   padding-left: 15px;
+}
+
+
+.scales {
+  max-width: 25%;
+  max-height: 150px;
+  float: right;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+// -------------
+// NavBar
+
+
+
+.navbar {
+  margin-bottom: 10px;
+  min-height: 0px;
 }
 
 .navbar-collapse {
   background-color: #01807E;
   border-radius: 15px;
   text-align: center;
-  font-weight: bold;
+}
+
+.navbar-nav.nav-justified > li {
+    float:none;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: #F05D22;
+  color: white;
 }
 
 .navbar-default {
   border-style: none;
+  background-color: #fff;
 }
 
 .navbar-toggle {
@@ -60,27 +87,29 @@
   float: none;
 }
 
-.scales {
-  max-width: 25%;
-  max-height: 250px;
-  float: right;
-  display: inline-block;
+.searchbox {
+	border-radius: 5px;
 }
 
+// -------------
 //Homepage
+
+a.option-link:hover {
+  background-color: red;
+}
 
 .lightgrey {
 	background-color: #B5B5B5;
 }
 
 .home-message p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
 }
 
 .option-image {
-  max-height: 400px;
+  max-height: 411px;
   overflow: hidden;
 }
 
@@ -102,35 +131,18 @@
   min-height: 253px;
 }
 
-@media all and (max-width: 600px) {
-    .option-image {
-        display:none;
-    }
-    p.option-text {
-      min-height: 120px;
-    }
-    p.home-message {
-      display: none;
-    }
-    .col-xs-6 {
-      padding: 2px;
-      margin-bottom: -10px;
-    }
-    .navbar-default {
-      margin-bottom: 0px;
-    }
-    .homepage-box {
-      padding: 10px;
-      min-height: 200px;
-    }
-}
-
 .option-text {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
-  min-height: 100px;
+  min-height: 40px;
   margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.option-title {
+	text-align: center;
+	margin-bottom: 5px;
 }
 
 .option-button {
@@ -159,6 +171,8 @@
   color: black;
   display: block;
   margin: auto;
+  margin-top: 10px;
+  -webkit-border-radius: 15px;
 }
 
 .safetyplan {
@@ -177,16 +191,49 @@
   margin-top: 20px;
 }
 
+@media all and (max-width: 600px) {
+    .option-image {
+        display:none;
+    }
+    .banner-image {
+      display: none;
+    }
+    p.option-text {
+      min-height: 80px;
+      font-size: 15px;
+    }
+    p.home-message {
+      display: none;
+    }
+    .col-xs-6 {
+      padding: 2px;
+      margin-bottom: -10px;
+    }
+    .navbar-default {
+      margin-bottom: 0px;
+    }
+    .homepage-box {
+      padding: 10px;
+      min-height: 160px;
+    }
+}
+
+// -------------
 //Generic
 
 .banner-image {
+	max-height: 200px;
+	width: 100%;
   -webkit-border-radius: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .option-box {
-  padding: 20px;
-  margin-bottom: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
   -webkit-border-radius: 15px;
   position: relative;
 }
@@ -196,6 +243,7 @@
 }
 
 .blue-text {
+	margin-bottom: 5px;
   color: #01807E;
   font-weight: bold;
 }
@@ -230,16 +278,15 @@
 }
 
 .bubble {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
   -webkit-border-radius: 15px;
   position: relative;
 }
 
 .bubble-title {
+	font-size: 16px;
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 15px;
   margin: auto;
 }
 
@@ -247,9 +294,31 @@
   margin-top: 15px;
 }
 
+h4 {
+	margin-bottom: 5px;
+}
+
+.grey-banner {
+	margin: auto;
+	text-align: center;
+}
+
+.main {
+	font-size: 12px;
+}
+
+div>p {
+	margin-bottom: 5px;
+}
+
 .side {
+	font-size: 12px;
   clear: right;
   float: right;
+}
+
+.underlined {
+	text-decoration: underline;
 }
 
 // -------------
@@ -313,7 +382,7 @@
   border-radius: 0 15px 15px 0;
 }
 
-// ----------------
+// ---------------
 // safety plan page
 
 .print-box {
@@ -375,6 +444,12 @@
 		display: block;
 		border: 12px solid black;
 	}
+}
+
+.safety-ring {
+	max-width: 70%;
+	margin: auto;
+	display: block;
 }
 
 

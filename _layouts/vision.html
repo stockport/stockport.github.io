@@ -7,11 +7,14 @@
 
     {% include header.html %}
 
-      {{ content }}
-      {% include panel.html %}
-      {% include halflogo.html %}
-      {% include libraries.html %}
-      
+		{{ content }}
+
+		<div class="side col-md-3">
+			{% include panel.html %}
+		</div>
+
+		{% include libraries.html %}
+
   </body>
 
 </html>
