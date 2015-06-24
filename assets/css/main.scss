@@ -144,6 +144,10 @@
 	margin-bottom: 5px;
 }
 
+.option-button-mobile {
+  display: none;
+}
+
 a.option-link:hover {
   text-decoration: none;
 }
@@ -188,7 +192,7 @@ a.option-link:hover {
   margin-top: 20px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 768px) {
     .option-image {
         display:none;
     }
@@ -212,6 +216,12 @@ a.option-link:hover {
     .homepage-box {
       padding: 10px;
       min-height: 160px;
+    }
+    .option-button {
+      display: none;
+    }
+    .option-button-mobile {
+      display: block;
     }
 }
 
