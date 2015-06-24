@@ -7,10 +7,14 @@
 
     {% include header.html %}
 
-      {{ content }}
+    {{ content }}
+
+    <div class="side col-md-3">
       {% include read.html %}
       {% include other.html %}
-      {% include libraries.html %}
+    </div>
+    
+    {% include libraries.html %}
       
   </body>
 

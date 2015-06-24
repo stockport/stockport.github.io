@@ -5,12 +5,16 @@
 
   <body>
 
-    {% include header.html %}
+  	{% include header.html %}
 
-      {{ content }}
+    {{ content }}
+    
+    <div class="side col-md-3">
       {% include support.html %}
       {% include safety.html %}
-      {% include libraries.html %}
+    </div>
+    
+    {% include libraries.html %}
       
   </body>
 
