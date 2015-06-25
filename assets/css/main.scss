@@ -50,8 +50,6 @@
 // -------------
 // NavBar
 
-
-
 .navbar {
   margin-bottom: 10px;
   min-height: 0px;
@@ -61,7 +59,6 @@
   background-color: #01807E;
   border-radius: 15px;
   text-align: center;
-  margin-bottom: 5px
 }
 
 .navbar-nav.nav-justified > li {
@@ -130,8 +127,8 @@
 }
 
 .homepage-box {
-	margin: 5%;
-  padding: 5%;
+	margin: 1%;
+  padding: 4%;
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
@@ -182,7 +179,7 @@ a.option-link:hover {
 .btn.btn-default.click-here {
   font-weight: bold;
   font-size: 1em;
-  font-size: 3vh;
+  font-size: 2vh;
   color: black;
   display: block;
   margin: auto;
@@ -237,7 +234,7 @@ a.option-link:hover {
 	max-height: 300px;
 	width: 100%;
   -webkit-border-radius: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   // display: block;
   // margin-left: auto;
   // margin-right: auto;
@@ -245,7 +242,7 @@ a.option-link:hover {
 
 .option-box {
   padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
 }
@@ -266,10 +263,12 @@ a.option-link:hover {
 
 .white {
   background-color: #fff;
+  padding-left: 1px;
 }
 
 .white-text {
   color: #fff;
+  margin-left: 5px;
 }
 
 .orange {
@@ -279,6 +278,10 @@ a.option-link:hover {
 .orange-text {
   color: #F05D22;
   font-weight: bold;
+}
+
+a.orange-text:visited {
+	color: #F05D22;
 }
 
 .grey {
@@ -292,8 +295,14 @@ a.option-link:hover {
 .bubble {
   padding: 5px;
   margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   -webkit-border-radius: 15px;
   position: relative;
+}
+
+.inner-bubble {
+	margin-bottom: 10px;
 }
 
 .bubble-title {
@@ -321,11 +330,20 @@ h4 {
 }
 
 html {
-	padding: 3%;
+	padding: 1% 3% 3% 3%;
 }
 
 div>p {
 	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.centred {
+	text-align: center;
+}
+
+.online {
+	overflow-wrap: break-word;
 }
 
 .side {
@@ -338,11 +356,50 @@ div>p {
 	text-decoration: underline;
 }
 
+.quicklink {
+  background-color: #F05D22;
+	padding: 5px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 15px;
+  position: relative;
+}
+
+// Bootstrap edits
+
+.col-md-9 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.col-md-3 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.col-sm-9 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.col-sm-3 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.container-fluid {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
 // -------------
 // Local help table
 
 .table {
   display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-flow: column nowrap;
   box-pack: justify;
@@ -353,6 +410,10 @@ div>p {
 
 .table-header {
   display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: flex-end;
   color: white;
@@ -366,6 +427,10 @@ div>p {
 
 .table-row {
   display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-flow: row-nowrap;
   width: 100%;
@@ -374,11 +439,15 @@ div>p {
 }
 
 .table-row-item {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 	&:nth-of-type(1) { font-weight: bold; }
   padding: 1%;
   align-items: center;
-  display: box;
-  display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
   flex-basis: 0;
@@ -498,7 +567,7 @@ div>p {
 }
 
 .safety-ring {
-	max-width: 70%;
+	max-width: 80%;
 	margin: auto;
 	display: block;
 }
