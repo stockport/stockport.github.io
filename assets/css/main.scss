@@ -417,6 +417,7 @@ div>p {
 	min-height: 50px;
 	min-width: 50px;
 	margin: 10px;
+
 }
 
 .safety-header {
@@ -442,14 +443,13 @@ div>p {
 	margin: auto;
 	height: 100px;
 	width: 100px;
-  position: absolute;
   z-index: 1000;
   border-radius: 5px;
 }
 
 .safety-mark {
-	max-height: 25px;
-	max-width: 25px;
+	max-height: 20px;
+	max-width: 20px;
 	float: right;
 }
 
@@ -472,6 +472,13 @@ div>p {
   }
   .safety-mark {
     display: none;
+  }
+  .safety-text {
+	font-size: 18px;
+	font-weight: bold;
+  }
+  .safety-header {
+	font-weight: bold;
   }
   @page {size: landscape}
 }
