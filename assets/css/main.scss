@@ -112,6 +112,11 @@
   overflow: hidden;
 }
 
+#home {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .homepage-image {
   -webkit-border-radius: 15px;
   overflow: hidden;
@@ -124,12 +129,12 @@
 }
 
 .homepage-box {
-  padding: 4%;
+  padding: 10px;
+  // max-width: 300px;
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
   min-height: 500px;
-  max-width: 275px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -192,7 +197,7 @@ a.option-link:hover {
 	}
 }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1000px) {
   .homepage-box {
     min-height: 400px;
   }
