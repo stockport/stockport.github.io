@@ -83,14 +83,8 @@
   float: none;
 }
 
-.searchbox {
-	border-radius: 4px;
-}
-
-.search-button {
-	background-color: white;
-	border-radius: 4px;
-	border: 1px solid grey;
+input.st-default-search-input {
+  height: 10px;
 }
 
 // -------------
@@ -128,7 +122,6 @@
 
 .homepage-box {
   padding: 10px;
-  // max-width: 300px;
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
@@ -190,7 +183,7 @@ a.option-link:hover {
 }
 
 @media all and (max-width: 1132px) {
-	.searchbox {
+	li.searchbox {
 		display: none;
 	}
   .homepage-box {
