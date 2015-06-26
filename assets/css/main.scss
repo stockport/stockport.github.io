@@ -584,6 +584,9 @@ div>p {
 }
 
 @media print {
+  p {
+    font-size: 12px;
+  }
   .site-header {
     display: none;
   }
@@ -591,6 +594,9 @@ div>p {
     display: none;
   }
   .safety-mark {
+    display: none;
+  }
+  .print-box {
     display: none;
   }
   .safety-text {
