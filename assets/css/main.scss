@@ -124,7 +124,6 @@
   margin-left: auto;
   margin-right: auto;
   height: 75%;
-  max-width: 250px;
   width: 100%;
 }
 
@@ -145,8 +144,8 @@
   font-size: 2.5vh;
   margin-top: 10px;
   margin-bottom: 0px;
-  min-height: 100px;
-  max-height: 100px;;
+  min-height: 80px;
+  max-height: 140px;;
 }
 
 .options {
@@ -195,11 +194,17 @@ a.option-link:hover {
 	.searchbox {
 		display: none;
 	}
+  .homepage-box {
+    min-height: 350px;
+  }
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1200px) {
   .homepage-box {
-    min-height: 400px;
+    min-height: 300px;
+  }
+  .option-text {
+    font-size: 1em;
   }
 }
 
@@ -219,7 +224,7 @@ a.option-link:hover {
     }
     p.option-text {
       min-height: 80px;
-      font-size: 15px;
+      font-size: 12px;
     }
     p.home-message {
       display: none;
@@ -233,7 +238,7 @@ a.option-link:hover {
     }
     .homepage-box {
       padding: 10px;
-      min-height: 160px;
+      min-height: 140px;
     }
 }
 
@@ -585,7 +590,7 @@ div>p {
 
 @media print {
   p {
-    font-size: 12px;
+    font-size: 12px;  
   }
   .site-header {
     display: none;
