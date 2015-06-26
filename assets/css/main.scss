@@ -31,7 +31,6 @@
 
 .logo {
   max-width: 50%;
-  padding-left: 15px;
 }
 
 
@@ -216,6 +215,16 @@ a.option-link:hover {
     }
     .banner-image {
       display: none;
+    }
+    .scales {
+    	display: none;
+    }
+    .about {
+  	  max-width: 100%;
+  	  display: block;
+    }
+    .quicklinks {
+    	display: none;
     }
     p.option-text {
       min-height: 80px;
