@@ -35,7 +35,6 @@
 
 .logo {
   max-width: 50%;
-  padding-left: 15px;
 }
 
 
@@ -499,16 +498,6 @@ div>p {
 }
 
 .safety-container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   background-color: #F2F2F2;
   border-radius: 15px;
   max-width: 1106px;
@@ -516,18 +505,14 @@ div>p {
 }
 
 .safety-box {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-	flex-direction: column;
-	height: 250px;
-	width: 350px;
+	float: none;
+	display: inline-block;
+	margin: auto;
+	padding: 5px;
+	height: 300px;
+	width: 300px;
 	min-height: 50px;
 	min-width: 50px;
-	margin: 10px;
-
 }
 
 .safety-header {
@@ -537,12 +522,10 @@ div>p {
 }
 
 .safety-text {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-	height: 250px;
+	margin: auto;
+	display: block;
+	height: 80%;
+	width: 100%;
 	border: 2px solid grey;
 	border-radius: 15px;
 }
@@ -593,6 +576,10 @@ div>p {
   }
   .safety-header {
 	font-weight: bold;
+  }
+  .safety-box {
+  	height: 250px;
+  	width: 250px;
   }
   @page {size: landscape}
 }
