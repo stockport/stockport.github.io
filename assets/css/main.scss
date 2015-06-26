@@ -3,10 +3,6 @@
 ---
 @charset "utf-8";
 
-.container-fluid {
-  background-color: #fff;
-}
-
 .about {
   position: relative;
   max-width: 75%;
@@ -109,6 +105,7 @@
   font-size: 14px;
   font-weight: bold;
   padding: 5px;
+  margin-left: 15px;
 }
 
 .option-image {
@@ -127,13 +124,14 @@
 }
 
 .homepage-box {
-	margin: 1%;
   padding: 4%;
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
-  min-height: 330px;
+  min-height: 500px;
   max-width: 275px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .option-text {
@@ -142,7 +140,7 @@
   font-size: 2.5vh;
   margin-top: 10px;
   margin-bottom: 0px;
-  min-height: 40px;
+  min-height: 100px;
   max-height: 100px;;
 }
 
@@ -194,6 +192,19 @@ a.option-link:hover {
 	}
 }
 
+@media all and (max-width: 991px) {
+  .homepage-box {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid>.navbar-collapse {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
 @media all and (max-width: 768px) {
     .option-image {
         display:none;
@@ -218,12 +229,6 @@ a.option-link:hover {
     .homepage-box {
       padding: 10px;
       min-height: 160px;
-    }
-    .option-button {
-      display: none;
-    }
-    .option-button-mobile {
-      display: block;
     }
 }
 
