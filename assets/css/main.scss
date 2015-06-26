@@ -245,13 +245,6 @@ a.option-link:hover {
   // margin-right: auto;
 }
 
-.option-box {
-  padding: 5px;
-  margin-bottom: 5px;
-  -webkit-border-radius: 15px;
-  position: relative;
-}
-
 .blue {
   background-color: #01807E;
 }
@@ -297,11 +290,18 @@ a.orange-text:visited {
   background-color: #BFB900;
 }
 
-.bubble {
+.option-box {
   padding: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 15px;
+  position: relative;
+}
+
+.bubble {
+  padding: 10px;
+  margin-bottom: 10px;
+  // margin-left: 5px;
+  // margin-right: 5px;
   -webkit-border-radius: 15px;
   position: relative;
 }
@@ -369,7 +369,7 @@ div>p {
 .quicklink {
   background-color: #F05D22;
 	padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
 }
