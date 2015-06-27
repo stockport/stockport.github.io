@@ -225,7 +225,7 @@ a.option-link:hover {
   	  max-width: 100%;
   	  display: block;
     }
-    .quicklinks {
+    .quicklink {
     	display: none;
     }
     p.option-text {
@@ -242,6 +242,12 @@ a.option-link:hover {
     .navbar-default {
       margin-bottom: 0px;
     }
+    .nav-justified {
+  	width: 107%;
+ 	  }
+ 	  .navbar-collapse {
+ 	  	margin-bottom: 10px;
+ 	  }
     .homepage-box {
       padding: 10px;
       min-height: 140px;
@@ -596,7 +602,7 @@ div>p {
 
 @media print {
   p {
-    font-size: 12px;  
+    font-size: 12px;
   }
   .site-header {
     display: none;
