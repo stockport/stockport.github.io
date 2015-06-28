@@ -498,19 +498,20 @@ div>p {
 }
 
 .safety-container {
+	text-align: center;
   background-color: #F2F2F2;
   border-radius: 15px;
   max-width: 1106px;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .safety-box {
 	float: none;
 	display: inline-block;
-	margin: auto;
 	padding: 5px;
 	height: 300px;
-	width: 300px;
+	width: 350px;
 	min-height: 50px;
 	min-width: 50px;
 }
@@ -528,18 +529,25 @@ div>p {
 	width: 100%;
 	border: 2px solid grey;
 	border-radius: 15px;
+	outline: none;
+}
+
+.safety-text:focus {
+	border: 2px solid #F05D22;
 }
 
 .safety-tooltip {
-	position: relative;
-	display: none;
-	opacity: 0.75;
-	background-color: #01807E;
-	color: white;
-	text-align: center;
-	margin: auto;
-	height: 100px;
-	width: 100px;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  display: none;
+  opacity: 0.75;
+  background-color: #01807E;
+  color: white;
+  text-align: center;
+  margin: auto;
+  height: 100px;
+  width: 100px;
   z-index: 1000;
   border-radius: 5px;
 }
@@ -573,6 +581,7 @@ div>p {
   .safety-text {
 	font-size: 18px;
 	font-weight: bold;
+	padding: 5px;
   }
   .safety-header {
 	font-weight: bold;
