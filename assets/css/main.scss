@@ -3,6 +3,10 @@
 ---
 @charset "utf-8";
 
+.container-fluid {
+  background-color: #fff;
+}
+
 .about {
   position: relative;
   max-width: 75%;
@@ -83,8 +87,14 @@
   float: none;
 }
 
-input.st-default-search-input {
-  height: 10px;
+.searchbox {
+	border-radius: 4px;
+}
+
+.search-button {
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid grey;
 }
 
 // -------------
@@ -98,16 +108,10 @@ input.st-default-search-input {
   font-size: 14px;
   font-weight: bold;
   padding: 5px;
-  margin-left: 15px;
 }
 
 .option-image {
   overflow: hidden;
-}
-
-#home {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .homepage-image {
@@ -117,17 +121,18 @@ input.st-default-search-input {
   margin-left: auto;
   margin-right: auto;
   height: 75%;
+  max-width: 250px;
   width: 100%;
 }
 
 .homepage-box {
-  padding: 10px;
+	margin: 1%;
+  padding: 4%;
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
-  min-height: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 330px;
+  max-width: 275px;
 }
 
 .option-text {
@@ -136,8 +141,8 @@ input.st-default-search-input {
   font-size: 2.5vh;
   margin-top: 10px;
   margin-bottom: 0px;
-  min-height: 80px;
-  max-height: 140px;;
+  min-height: 40px;
+  max-height: 100px;;
 }
 
 .options {
@@ -182,33 +187,10 @@ a.option-link:hover {
   width: 75%;
 }
 
-// .btn.btn-default.click-here:hover {
-//   background-color: #F05D22;
-// }
-
 @media all and (max-width: 1132px) {
-	li.searchbox {
+	.searchbox {
 		display: none;
 	}
-  .homepage-box {
-    min-height: 350px;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .homepage-box {
-    min-height: 300px;
-  }
-  .option-text {
-    font-size: 1em;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-fluid>.navbar-collapse {
-    margin-left: -5px;
-    margin-right: -5px;
-  }
 }
 
 @media all and (max-width: 768px) {
@@ -218,19 +200,9 @@ a.option-link:hover {
     .banner-image {
       display: none;
     }
-    .scales {
-    	display: none;
-    }
-    .about {
-  	  max-width: 100%;
-  	  display: block;
-    }
-    .quicklink {
-    	display: none;
-    }
     p.option-text {
       min-height: 80px;
-      font-size: 12px;
+      font-size: 15px;
     }
     p.home-message {
       display: none;
@@ -242,15 +214,15 @@ a.option-link:hover {
     .navbar-default {
       margin-bottom: 0px;
     }
-    .nav-justified {
-  	width: 107%;
- 	  }
- 	  .navbar-collapse {
- 	  	margin-bottom: 10px;
- 	  }
     .homepage-box {
       padding: 10px;
-      min-height: 140px;
+      min-height: 160px;
+    }
+    .option-button {
+      display: none;
+    }
+    .option-button-mobile {
+      display: block;
     }
 }
 
@@ -265,6 +237,13 @@ a.option-link:hover {
   // display: block;
   // margin-left: auto;
   // margin-right: auto;
+}
+
+.option-box {
+  padding: 5px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 15px;
+  position: relative;
 }
 
 .blue {
@@ -312,23 +291,20 @@ a.orange-text:visited {
   background-color: #BFB900;
 }
 
-.option-box {
-  padding: 5px;
-  margin-bottom: 10px;
-  -webkit-border-radius: 15px;
-  position: relative;
-}
-
 .bubble {
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   -webkit-border-radius: 15px;
   position: relative;
 }
 
 .inner-bubble {
-  margin: 5px;
+	margin-bottom: 10px;
   padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   -webkit-border-radius: 15px;
   position: relative;
 }
@@ -370,7 +346,7 @@ div>p {
 	text-align: center;
 }
 
-.wrapped {
+.online {
 	overflow-wrap: break-word;
 }
 
@@ -387,7 +363,7 @@ div>p {
 .quicklink {
   background-color: #F05D22;
 	padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   -webkit-border-radius: 15px;
   position: relative;
 }
@@ -535,7 +511,7 @@ div>p {
 	display: inline-block;
 	padding: 5px;
 	height: 300px;
-	width: 350px;
+	width: 325px;
 	min-height: 50px;
 	min-width: 50px;
 }
@@ -544,6 +520,8 @@ div>p {
   color: #01807E;
   font-size: 16px;
   text-align: center;
+  display: inline-block;
+  width: 90%;
 }
 
 .safety-text {
@@ -580,6 +558,7 @@ div>p {
 	max-height: 20px;
 	max-width: 20px;
 	float: right;
+  display: inline-block;
 }
 
 .safety-mark:hover +.safety-tooltip {
@@ -593,9 +572,6 @@ div>p {
 }
 
 @media print {
-  p {
-    font-size: 12px;
-  }
   .site-header {
     display: none;
   }
@@ -603,9 +579,6 @@ div>p {
     display: none;
   }
   .safety-mark {
-    display: none;
-  }
-  .print-box {
     display: none;
   }
   .safety-text {
