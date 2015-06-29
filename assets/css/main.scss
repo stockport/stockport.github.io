@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 .container-fluid {
-  background-color: #fff;
+  background-color: #fdfdfd;
 }
 
 .about {
@@ -209,7 +209,7 @@ a.option-link:hover {
   }
   p.option-text {
     min-height: 80px;
-		font-size: 20px;
+		font-size: 1em;
   }
   p.home-message {
     display: none;
