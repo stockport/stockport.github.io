@@ -87,8 +87,8 @@
   float: none;
 }
 
-.searchbox {
-	border-radius: 4px;
+li.searchbox {
+	border-radius: 0px;
 }
 
 .search-button {
@@ -126,7 +126,9 @@
 }
 
 .homepage-box {
-	margin: 1%;
+	margin: auto;
+	margin-left: 4%;
+	margin-right: 4%;
   padding: 4%;
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
@@ -198,10 +200,10 @@ a.option-link:hover {
   width: 75%;
 }
 
-@media all and (max-width: 1132px) {
-	.searchbox {
+@media all and (max-width: 1066px) {
+/*	li.searchbox {
 		display: none;
-	}
+	}*/
 }
 
 @media all and (max-width: 994px) {
@@ -216,7 +218,7 @@ a.option-link:hover {
 
 @media all and (max-width: 768px) {
     .option-image {
-        display:none;
+      display:none;
     }
     .banner-image {
       display: none;
@@ -233,11 +235,18 @@ a.option-link:hover {
       margin-bottom: -10px;
     }
     .navbar-default {
-      margin-bottom: 0px;
+      margin: auto;
+      margin-bottom: 5px;
+      width: 80%;
+    }
+    .navbar-nav {
+    	margin: auto;
     }
     .homepage-box {
       padding: 10px;
       min-height: 160px;
+      margin: auto;
+      margin-bottom: 20px;
     }
     .option-button {
       display: none;
@@ -247,6 +256,13 @@ a.option-link:hover {
     }
     .safety-box {
     	max-width: 250px;
+    }
+    li.searchbox {
+    	/*display: none;*/
+    	margin-bottom: 5px;
+    }
+    .quicklink {
+    	display: none;
     }
 }
 
@@ -268,6 +284,10 @@ a.option-link:hover {
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
   position: relative;
+}
+
+.flat {
+	margin-bottom: 0px;
 }
 
 .blue {
@@ -329,7 +349,7 @@ a.orange-text:visited {
   padding: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 10px;
   position: relative;
 }
 
@@ -338,6 +358,14 @@ a.orange-text:visited {
   text-align: center;
   margin: 2px;
   padding: 1px;
+}
+
+.spaced5 {
+	margin-top: 5px;
+}
+
+.spaced10 {
+	margin-top: 10px;
 }
 
 .halflogo {
@@ -351,6 +379,7 @@ h4 {
 .grey-banner {
 	margin: auto;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .main {
@@ -377,7 +406,6 @@ div>p {
 .side {
 	font-size: 12px;
   clear: right;
-  float: right;
 }
 
 .underlined {
@@ -419,8 +447,9 @@ div>p {
 	padding-left: 10px;
 }
 
-.st-default-search-input {
+input.st-default-search-input {
 	max-height: 12px;
+	width: 125px;
 }
 
 // -------------
