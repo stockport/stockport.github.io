@@ -9,7 +9,7 @@
 
 .about {
   position: relative;
-  max-width: 75%;
+  max-width: 85%;
   display: inline-block;
 }
 .banner {
@@ -170,9 +170,20 @@ a.option-link:hover {
 }
 
 .preview-text {
-  float: right;
   max-width: 55%;
   display: inline-block;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 600px) {
+	.preview {
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	.preview-text {
+		max-width: 100%;
+	}
 }
 
 .btn.btn-default.click-here {
@@ -192,6 +203,16 @@ a.option-link:hover {
 		display: none;
 	}
 }
+
+@media all and (max-width: 994px) {
+	.scales {
+		display: none;
+	}
+	.about {
+		max-width: 100%;
+	}
+}
+
 
 @media all and (max-width: 768px) {
     .option-image {
@@ -223,6 +244,9 @@ a.option-link:hover {
     }
     .option-button-mobile {
       display: block;
+    }
+    .safety-box {
+    	max-width: 250px;
     }
 }
 
@@ -301,7 +325,7 @@ a.orange-text:visited {
 }
 
 .inner-bubble {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
   padding: 5px;
   margin-left: 5px;
   margin-right: 5px;
@@ -346,7 +370,7 @@ div>p {
 	text-align: center;
 }
 
-.online {
+.wrapped {
 	overflow-wrap: break-word;
 }
 
@@ -393,6 +417,10 @@ div>p {
 .container-fluid {
 	padding-right: 10px;
 	padding-left: 10px;
+}
+
+.st-default-search-input {
+	max-height: 12px;
 }
 
 // -------------
@@ -511,7 +539,7 @@ div>p {
 	display: inline-block;
 	padding: 5px;
 	height: 300px;
-	width: 325px;
+	width: 350px;
 	min-height: 50px;
 	min-width: 50px;
 }
@@ -592,6 +620,9 @@ div>p {
   .safety-box {
   	height: 250px;
   	width: 250px;
+  }
+  .safety-description {
+  	display: none;
   }
   @page {size: landscape}
 }
