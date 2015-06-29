@@ -167,14 +167,16 @@ a.option-link:hover {
 .preview {
   max-width: 40%;
   display: inline-block;
-  border-radius: 15px;
+  border-radius: 10px;
   vertical-align: middle;
+  max-height: 175px;
 }
 
 .preview-text {
   max-width: 55%;
   display: inline-block;
   vertical-align: middle;
+  margin-left: 10px;
 }
 
 .btn.btn-default.click-here {
