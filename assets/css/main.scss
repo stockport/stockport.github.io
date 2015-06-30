@@ -115,7 +115,7 @@ li.searchbox {
 }
 
 .homepage-image {
-  -webkit-border-radius: 10px;
+  border-radius: 10px;
   overflow: hidden;
   display: block;
   margin-left: auto;
@@ -131,7 +131,7 @@ li.searchbox {
 	margin-right: 8%;
   padding: 4%;
   margin-bottom: 10px;
-  -webkit-border-radius: 15px;
+  border-radius: 15px;
   position: relative;
   min-height: 330px;
   max-width: 275px;
@@ -185,7 +185,7 @@ a.option-link:hover {
   display: block;
   margin: auto;
   margin-top: 15px;
-  -webkit-border-radius: 15px;
+  border-radius: 15px;
   width: 85px;
   height: 30px;
 }
@@ -200,7 +200,7 @@ a.option-link:hover {
 		max-width: 100%;
 	}
 	div.safety-box {
-		margin-left: 0px;
+		margin: auto;
 	}
 }
 
@@ -273,7 +273,7 @@ a.option-link:hover {
 .banner-image {
 	max-height: 300px;
 	width: 100%;
-  -webkit-border-radius: 15px;
+  border-radius: 15px;
   margin-bottom: 10px;
   // display: block;
   // margin-left: auto;
@@ -283,7 +283,7 @@ a.option-link:hover {
 .option-box {
   padding: 5px;
   margin-bottom: 10px;
-  -webkit-border-radius: 15px;
+  border-radius: 15px;
   position: relative;
 }
 
@@ -324,7 +324,8 @@ a.option-link:hover {
   font-weight: bold;
 }
 
-$light-orange: lighten(#F05D22, 5%);
+$light-orange: lighten(#F05D22, 10%);
+
 a.orange-text:visited {
 	color: $light-orange;
 }
@@ -342,7 +343,7 @@ a.orange-text:visited {
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  -webkit-border-radius: 15px;
+  border-radius: 15px;
   position: relative;
 }
 
@@ -351,7 +352,7 @@ a.orange-text:visited {
   padding: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  -webkit-border-radius: 10px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -420,7 +421,7 @@ div>p {
   background-color: #F05D22;
 	padding: 5px;
   margin-bottom: 5px;
-  -webkit-border-radius: 15px;
+  border-radius: 15px;
   position: relative;
 }
 
@@ -563,7 +564,7 @@ input.st-default-search-input {
 .safetyplan {
   width:100%;
   min-height:200px;
-  -webkit-border-radius: 15px;
+  border-radius: 15px;
   resize: none;
   outline: none;
   border-style: solid;
@@ -574,6 +575,10 @@ input.st-default-search-input {
 .safety {
   padding: 10px;
   margin-top: 20px;
+}
+
+.safety-description {
+	margin-bottom: 10px;
 }
 
 .safety-container {
