@@ -199,9 +199,6 @@ a.option-link:hover {
 	.preview-text {
 		max-width: 100%;
 	}
-	p.option-text {
-		font-size: 1.15em;
-	}
 }
 
 @media all and (max-width: 767px) {
@@ -213,7 +210,7 @@ a.option-link:hover {
   }
   p.option-text {
     min-height: 80px;
-		font-size: 1.4em;
+		font-size: 1.2em;
 		margin-left: 0px;
 		margin-bottom: 0px;
   }
