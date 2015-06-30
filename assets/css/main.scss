@@ -115,7 +115,7 @@ li.searchbox {
 }
 
 .homepage-image {
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 10px;
   overflow: hidden;
   display: block;
   margin-left: auto;
@@ -127,8 +127,8 @@ li.searchbox {
 
 .homepage-box {
 	margin: auto;
-	margin-left: 4%;
-	margin-right: 4%;
+	margin-left: 8%;
+	margin-right: 8%;
   padding: 4%;
   margin-bottom: 10px;
   -webkit-border-radius: 15px;
@@ -139,16 +139,15 @@ li.searchbox {
 
 .option-text {
   color: white;
-  font-size: 1.1em;
-  font-size: 2.0vmin;
+  font-size: 1em;
   margin-top: 10px;
   margin-bottom: 15px;
-  min-height: 40px;
-  height: 60px;;
+  height: 30px;
+  text-align: center;
 }
 
 .options {
-	margin-top: 1%;
+	margin-top: 4%;
 }
 
 .option-title {
@@ -181,14 +180,14 @@ a.option-link:hover {
 
 .btn.btn-default.click-here {
   font-weight: bold;
-  font-size: 1em;
-  font-size: 1.25vw;
+  font-size: 0.85em;
   color: black;
   display: block;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   -webkit-border-radius: 15px;
-  width: 65%;
+  width: 85px;
+  height: 30px;
 }
 
 @media all and (max-width: 600px) {
@@ -199,6 +198,9 @@ a.option-link:hover {
 	}
 	.preview-text {
 		max-width: 100%;
+	}
+	p.option-text {
+		font-size: 1.15em;
 	}
 }
 
@@ -211,9 +213,11 @@ a.option-link:hover {
   }
   p.option-text {
     min-height: 80px;
-		font-size: 1em;
+		font-size: 1.4em;
+		margin-left: 0px;
+		margin-bottom: 0px;
   }
-  p.home-message {
+  .home-message {
     display: none;
   }
   .col-xs-6 {
@@ -257,6 +261,9 @@ a.option-link:hover {
 	}
 	.about {
 		max-width: 100%;
+	}
+	.btn.btn-default.click-here {
+		font-size: 12px;
 	}
 }
 
@@ -383,6 +390,8 @@ h4 {
 
 html {
 	padding: 1% 4% 0% 4%;
+	max-width: 1078px;
+	margin: auto;
 }
 
 div>p {
@@ -524,6 +533,13 @@ input.st-default-search-input {
   border-radius: 0 15px 15px 0;
 }
 
+// --------------
+// Resources page
+
+.resource-box {
+	margin-bottom: 10px;
+}
+
 // ---------------
 // safety plan page
 
@@ -622,7 +638,7 @@ input.st-default-search-input {
   display: inline-block;
 }
 
-.safety-mark:hover +.safety-tooltip {
+.safety-mark:hover ~.safety-tooltip {
 	display: block;
 }
 
