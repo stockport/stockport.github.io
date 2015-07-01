@@ -225,6 +225,9 @@ a.option-link:hover {
     padding: 2px;
     margin-bottom: -10px;
   }
+  .logo-holder {
+  	display: none;
+  }
   .navbar-default {
     margin: auto;
     margin-bottom: 5px;
@@ -273,6 +276,10 @@ a.option-link:hover {
 
 // -------------
 //Generic
+
+.active {
+	background-color: #F05D22;
+}
 
 .banner-image {
 	max-height: 300px;
