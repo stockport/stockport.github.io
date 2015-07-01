@@ -9,7 +9,7 @@
 
 .about {
   position: relative;
-  max-width: 85%;
+  max-width: 80%;
   display: inline-block;
 }
 .banner {
@@ -250,7 +250,7 @@ a.option-link:hover {
   li.searchbox {
   	margin-bottom: 5px;
   }
-  .quicklink {
+  .quicklink-box {
   	display: none;
   }
 }
@@ -417,12 +417,26 @@ div>p {
 	text-decoration: underline;
 }
 
-.quicklink {
+.quicklink-box {
   background-color: #F05D22;
 	padding: 5px;
   margin-bottom: 5px;
   border-radius: 15px;
   position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+
+.quicklink:hover {
+	text-decoration: none;
+}
+
+.quicklink-text {
+  font-size: 14px;
+	color: white;
+  margin: 2px;
+  padding: 1px;
+  text-decoration: underline;
 }
 
 // Bootstrap edits
@@ -604,7 +618,7 @@ input.st-default-search-input {
 
 .safety-header {
   color: #01807E;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   display: inline-block;
   width: 80%;
