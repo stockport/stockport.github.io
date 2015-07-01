@@ -1,6 +1,6 @@
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-<!-- <script src="../assets/lib/mm-fontsize.js" type="text/javascript"></script> -->
+
 <script src="../assets/lib/jquery-2.1.4.min.js"></script>
 <script src="../assets/lib/bootstrap.min.js"></script>
 
@@ -14,3 +14,17 @@
 	ga('send', 'pageview');
 
 </script>
+
+	<!-- Highlighting of currently selected page -->
+<script>
+	var links = document.querySelectorAll("a.navlink");
+
+	var len = links.length;
+	for (var i = 0; i < len; i += 1) {
+	  if (document.URL === links[i].href) {
+	  	console.log("match");
+	  	console.log(links[i].className += " active");
+	    }
+	  }
+</script>
+
