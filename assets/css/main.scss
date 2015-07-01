@@ -217,6 +217,8 @@ a.option-link:hover {
 		font-size: 1.2em;
 		margin-left: 0px;
 		margin-bottom: 0px;
+	  display: table-cell;
+	  vertical-align: middle;
   }
   .home-message {
     display: none;
@@ -241,6 +243,8 @@ a.option-link:hover {
     min-height: 160px;
     margin: auto;
     margin-bottom: 20px;
+    display: table;
+    max-height: 100px;
   }
   .option-button {
     display: none;
