@@ -706,12 +706,13 @@ $on-laptop:        800px;
 }
 
 .service {
+	padding: 12px;
   text-align: center;
-  border-radius: 35px 0 0 35px;
+  border-radius: 25px 0 0 25px;
 }
 
 .contact {
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 25px 25px 0;
 }
 
 
@@ -728,7 +729,6 @@ body {
 
 .responsive-table {
   width: 100%;
-  margin-bottom: 1.5em;
 
   @media (min-width: $bp-bart) {
     font-size: .9em;
@@ -760,7 +760,7 @@ body {
 
     th {
       background-color: #F05D22;
-      /*border: 1px solid rgba(29,150,178,1);*/
+      border: 5px solid white;
       font-weight: normal;
       text-align: center;
       color: white;
@@ -815,8 +815,6 @@ body {
     }
 
     tr {
-      /*margin-bottom: 1em;*/
-      /*border: 2px solid rgba(29,150,178,1);*/
 
       @media (min-width: $bp-bart) {
         display: table-row;
@@ -833,18 +831,52 @@ body {
 	    &:nth-of-type(odd) {
 	    	background-color: #F0F7F7;
 	    }
+
+	    @media (max-width: $bp-bart) {
+		    &:nth-of-type(1n) {
+		    	background-color: transparent;
+		    }
+
+		    td {
+			    &:nth-of-type(1n) {
+			    	background-color: #C7E2E2;
+			    	border: 2px solid white;
+
+			    }
+			  }
+			}
+    }
+
+    th {
+	    @media (max-width :$bp-bart) {
+
+	    }
     }
 
     th[scope="row"] {
       background-color: #F05D22;
       color: white;
+      /*border: 5px solid white;*/
 
       @media (min-width: $bp-lisa) {
         background-color: transparent;
-	      border-radius: 15px;
         color: black;
         text-align: left;
       }
+
+      @media (max-width: $bp-bart) {
+      	background-color: #F05D22;
+      	padding: 5px;
+      	border-radius: 25px;
+      	color: white;
+      	margin-top: 10px;
+      	margin-bottom: 2px;
+      	text-align: center;
+      }
+    }
+
+    th[scope="col"] {
+    	background-color: green;
     }
 
     td {
@@ -862,8 +894,8 @@ body {
     td[data-title]:before {
       content: attr(data-title);
       float: left;
-      font-size: .8em;
-      color: rgba(94,93,82,.75);
+      font-size: 1em;
+      color: #F05D22;
 
       @media (min-width: $bp-lisa) {
         font-size: .9em;
