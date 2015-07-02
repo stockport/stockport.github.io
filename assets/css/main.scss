@@ -9,11 +9,12 @@
 
 .about {
   position: relative;
-  max-width: 85%;
+  max-width: 80%;
   display: inline-block;
 }
 .banner {
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 .emergency {
@@ -205,6 +206,9 @@ a.option-link:hover {
 }
 
 @media all and (max-width: 767px) {
+	.banner {
+		margin-bottom: 0px;
+	}
   .banner-image {
     display: none;
   }
@@ -216,6 +220,8 @@ a.option-link:hover {
 		font-size: 1.2em;
 		margin-left: 0px;
 		margin-bottom: 0px;
+	  display: table-cell;
+	  vertical-align: middle;
   }
   .home-message {
     display: none;
@@ -223,6 +229,9 @@ a.option-link:hover {
   .col-xs-6 {
     padding: 2px;
     margin-bottom: -10px;
+  }
+  .logo-holder {
+  	display: none;
   }
   .navbar-default {
     margin: auto;
@@ -237,6 +246,8 @@ a.option-link:hover {
     min-height: 160px;
     margin: auto;
     margin-bottom: 20px;
+    display: table;
+    max-height: 100px;
   }
   .option-button {
     display: none;
@@ -250,10 +261,18 @@ a.option-link:hover {
   li.searchbox {
   	margin-bottom: 5px;
   }
-  .quicklink {
+  .quicklink-box {
   	display: none;
   }
 }
+
+@media all and (max-width: 991px) {
+	.hotline {
+		margin-left: 5px;
+		margin-right:5px;
+	}
+}
+
 
 @media all and (max-width: 994px) {
 	.scales {
@@ -265,10 +284,17 @@ a.option-link:hover {
 	.btn.btn-default.click-here {
 		font-size: 12px;
 	}
+	.hotline {
+		margin-bottom: 5px;
+	}
 }
 
 // -------------
 //Generic
+
+.active {
+	background-color: #F05D22;
+}
 
 .banner-image {
 	max-height: 300px;
@@ -371,8 +397,18 @@ a.orange-text:visited {
 	margin-top: 10px;
 }
 
-.halflogo {
+.half-logo {
+	width: 100%;
   margin-top: 15px;
+  position: relative;
+  display: block;
+}
+
+.logo-holder {
+	max-width: 25%;
+	position: absolute;
+	bottom: 10px;
+	right: -29%;
 }
 
 h4 {
@@ -390,7 +426,7 @@ h4 {
 }
 
 html {
-	padding: 1% 4% 0% 4%;
+	padding: 1% 4% 4% 4%;
 	max-width: 1078px;
 	margin: auto;
 }
@@ -417,12 +453,26 @@ div>p {
 	text-decoration: underline;
 }
 
-.quicklink {
+.quicklink-box {
   background-color: #F05D22;
 	padding: 5px;
   margin-bottom: 5px;
   border-radius: 15px;
   position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+
+.quicklink:hover {
+	text-decoration: none;
+}
+
+.quicklink-text {
+  font-size: 14px;
+	color: white;
+  margin: 2px;
+  padding: 1px;
+  text-decoration: underline;
 }
 
 // Bootstrap edits
@@ -457,54 +507,14 @@ input.st-default-search-input {
 	width: 125px;
 }
 
-// -------------
-// Local help table
-
-.table {
-	display: table;
-  line-height: 1.25;
-}
-
-.table-header {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px;
-}
-
-.table-header-item {
-  background-color: #F05D22;
-}
-
-.table-row {
-  width: 100%;
-  &:nth-of-type(even) { background-color: #F0F7F7; }
-  &:nth-of-type(odd) { background-color: #C7E2E2; }
-}
-
-.table-row-item {
-	padding: 1%;
-  padding-left: 0.3em;
-  border: 3px solid white;
-}
-
-.service {
-  text-align: center;
-  border-radius: 15px 0 0 15px;
-}
-
-.contact {
-  border-radius: 0 15px 15px 0;
-}
-
-// --------------
+// -----------------------
 // Resources page
 
 .resource-box {
 	margin-bottom: 10px;
 }
 
-// ---------------
+// -----------------------
 // safety plan page
 
 .print-box {
@@ -566,7 +576,7 @@ input.st-default-search-input {
 
 .safety-header {
   color: #01807E;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   display: inline-block;
   width: 80%;
@@ -686,13 +696,23 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
-;
-
-
+        "syntax-highlighting";
 
 // Local help table sans flexbox
 // -----------------------------
+
+.table {
+	display: table;
+}
+
+.service {
+  text-align: center;
+  border-radius: 35px 0 0 35px;
+}
+
+.contact {
+  border-radius: 0 15px 15px 0;
+}
 
 
 // Breakpoints
@@ -702,41 +722,9 @@ $bp-bart: 48em;
 $bp-marge: 62em;
 $bp-homer: 75em;
 
-// Styles
-/** {*/
- /*@include box-sizing(border-box);*/
-
-/* &:before,
- &:after {
-   @include box-sizing(border-box);
- }
-}*/
-
 body {
   font-family: arial;
 }
-
-/*a {
-  color: rgba(51,122,168,1);
-
-  &:hover,
-  &:focus {
-    color: rgba(75,138,178,1);
-  }
-}*/
-
-/*.container {
-  margin: 5% 3%;
-
-  @media (min-width: $bp-bart) {
-    margin: 2%;
-  }
-
-  @media (min-width: $bp-homer) {
-    margin: 2em auto;
-    max-width: $bp-homer;
-  }
-}*/
 
 .responsive-table {
   width: 100%;
@@ -784,10 +772,7 @@ body {
   }
 
   // Set these items to display: block for narrow viewports
-  tbody,
-  tr,
-  th,
-  td {
+  tbody, tr, th, td {
     display: block;
     padding: 0;
     text-align: left;
@@ -801,8 +786,7 @@ body {
     }
   }
 
-  th,
-  td {
+  th, td {
     padding: .5em;
     vertical-align: middle;
 
