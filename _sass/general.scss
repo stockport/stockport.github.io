@@ -1,0 +1,187 @@
+.banner {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.banner-image {
+  max-height: 300px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.blue {
+  background-color: #01807E;
+}
+
+.blue-text {
+  margin-bottom: 5px;
+  color: #01807E;
+  font-weight: bold;
+}
+
+.bubble {
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.bubble-title {
+  font-size: 16px;
+  text-align: center;
+  margin: 2px;
+  padding: 1px;
+}
+
+.centred {
+  text-align: center;
+}
+
+.container-fluid {
+  background-color: #fdfdfd;
+}
+
+div>p {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.flat {
+  margin-bottom: 0px;
+}
+
+.grey {
+  background-color: #616161;
+}
+
+.grey-banner {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+.half-logo {
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+  display: block;
+}
+
+html {
+  padding: 1% 4% 4% 4%;
+  max-width: 1078px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.inner-bubble {
+  margin-bottom: 5px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.light-blue {
+  background-color: #1279BD;
+}
+
+.logo-holder {
+  max-width: 25%;
+  position: absolute;
+  bottom: 10px;
+  right: -29%;
+}
+
+.main {
+  font-size: 1em;
+}
+
+.option-box {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.orange {
+  background-color: #F05D22;
+}
+
+.orange-text {
+  color: #F05D22;
+  font-weight: bold;
+}
+
+$light-orange: lighten(#F05D22, 10%);
+a.orange-text:visited {
+  color: $light-orange;
+}
+
+.quicklink-box {
+  background-color: #F05D22;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.quicklink:hover {
+  text-decoration: none;
+}
+
+.quicklink-text {
+  font-size: 14px;
+  color: white;
+  margin: 2px;
+  padding: 1px;
+  text-decoration: underline;
+}
+
+.side {
+  font-size: 12px;
+  clear: right;
+}
+
+.spaced5 {
+  margin-top: 5px;
+}
+
+.spaced10 {
+  margin-top: 10px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.white-text {
+  color: #fff;
+  margin-left: 5px;
+}
+
+.wrapped {
+  overflow-wrap: break-word;
+}
+
+.yellow {
+  background-color: #BFB900;
+}
