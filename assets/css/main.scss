@@ -706,7 +706,8 @@ $on-laptop:        800px;
 }
 
 .service {
-	padding: 12px;
+	padding: 0px;
+  margin: 0px;
   text-align: center;
   border-radius: 25px 0 0 25px;
 }
@@ -714,7 +715,6 @@ $on-laptop:        800px;
 .contact {
   border-radius: 0 25px 25px 0;
 }
-
 
 // Breakpoints
 $bp-maggie: 15em;
@@ -730,12 +730,16 @@ body {
 .responsive-table {
   width: 100%;
 
-  @media (min-width: $bp-bart) {
+  @media (max-width: $bp-bart) {
     font-size: .9em;
   }
 
   @media (min-width: $bp-marge) {
     font-size: 1em;
+  }
+
+  @media (max-width: $bp-bart) {
+  	margin-bottom: 15px;
   }
 
   thead {
@@ -856,7 +860,7 @@ body {
     th[scope="row"] {
       background-color: #F05D22;
       color: white;
-      /*border: 5px solid white;*/
+      border: 5px solid white;
 
       @media (min-width: $bp-lisa) {
         background-color: transparent;
@@ -869,6 +873,7 @@ body {
       	padding: 5px;
       	border-radius: 25px;
       	color: white;
+      	font-weight: 300;
       	margin-top: 10px;
       	margin-bottom: 2px;
       	text-align: center;
@@ -896,6 +901,7 @@ body {
       float: left;
       font-size: 1em;
       color: #F05D22;
+      font-weight: bold;
 
       @media (min-width: $bp-lisa) {
         font-size: .9em;
