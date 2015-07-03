@@ -1,0 +1,111 @@
+.print-box {
+  display: block;
+  margin: auto;
+  width: 195px;
+  margin-bottom: 20px;
+}
+
+.print-text:hover {
+  border-bottom: 2px solid white;
+}
+
+.print-link:hover {
+  text-decoration: none;
+}
+
+.safetyplan {
+  width:100%;
+  min-height:200px;
+  border-radius: 15px;
+  resize: none;
+  outline: none;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+.safety {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.safety-box {
+  float: none;
+  display: inline-block;
+  padding: 5px;
+  height: 300px;
+  width: 300px;
+  min-height: 50px;
+  min-width: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.safety-container {
+  text-align: center;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.safety-description {
+  margin-bottom: 10px;
+}
+
+.safety-header {
+  color: #01807E;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
+}
+
+.safety-mark {
+  max-height: 20px;
+  max-width: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.safety-mark:hover ~.safety-tooltip {
+  display: block;
+}
+
+.safety-ring {
+  max-width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.safety-text {
+  margin: auto;
+  display: block;
+  height: 80%;
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 15px;
+  outline: none;
+  padding: 5px;
+}
+
+.safety-text:focus {
+  border: 2px solid #F05D22;
+}
+
+.safety-tooltip {
+  position: fixed;
+  left: 20%;
+  top: 50%;
+  display: none;
+  opacity: 0.75;
+  background-color: #01807E;
+  color: white;
+  text-align: center;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  z-index: 1000;
+  border-radius: 5px;
+}

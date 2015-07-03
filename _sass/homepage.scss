@@ -1,0 +1,70 @@
+.btn.btn-default.click-here {
+  font-weight: bold;
+  font-size: 0.85em;
+  color: black;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 85px;
+  height: 30px;
+}
+
+.home-message p {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.homepage-box {
+  margin: auto;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 4%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  position: relative;
+  min-height: 330px;
+  max-width: 275px;
+}
+
+.homepage-image {
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75%;
+  max-width: 250px;
+  width: 100%;
+}
+
+.lightgrey {
+  background-color: #B5B5B5;
+}
+
+.option-image {
+  overflow: hidden;
+}
+
+.option-text {
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 30px;
+  text-align: center;
+}
+
+.option-title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.options {
+  margin-top: 4%;
+}
+
+a.option-link:hover {
+  text-decoration: none;
+}
