@@ -1,5 +1,9 @@
-.active {
+.current {
   background-color: #F05D22;
+}
+
+li.searchbox {
+  border-radius: 0px;
 }
 
 .navbar {
@@ -14,17 +18,28 @@
 }
 
 .navbar-nav.nav-justified > li {
-    float:none;
+  float: none;
+  vertical-align: middle;
+}
+
+.navbar-default .navbar-nav>li:hover {
+  background-color: #F05D22;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>input:hover {
+  background-color: white;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #fff;
   padding-top: 5px;
   padding-bottom: 5px;
+  line-height: normal;
+
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  background-color: #F05D22;
   color: white;
 }
 
@@ -40,8 +55,12 @@
   float: none;
 }
 
-li.searchbox {
-  border-radius: 0px;
+.navbar-default .navbar-nav>li.searchbox:hover {
+  background-color: transparent;
+}
+
+.navlink {
+  height: 100%;
 }
 
 .search-button {

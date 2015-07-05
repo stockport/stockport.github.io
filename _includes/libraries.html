@@ -19,10 +19,13 @@
 <script>
 	var links = document.querySelectorAll("a.navlink");
 
-	var len = links.length;
-	for (var i = 0; i < len; i += 1) {
+	var len = links.length,
+      i;
+
+	for (i = 0; i < len; i += 1) {
 	  if (document.URL === links[i].href) {
-	  	links[i].className += " active";
+      links[i].className += "current";
+	  	links[i].parentNode.className += " current";
 	    }
 	  }
 </script>
