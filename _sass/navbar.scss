@@ -1,5 +1,9 @@
-.active {
+.current {
   background-color: #F05D22;
+}
+
+li.searchbox {
+  border-radius: 0px;
 }
 
 .navbar {
@@ -51,12 +55,12 @@
   float: none;
 }
 
-li.searchbox {
-  border-radius: 0px;
-}
-
 .navbar-default .navbar-nav>li.searchbox:hover {
   background-color: transparent;
+}
+
+.navlink {
+  height: 100%;
 }
 
 .search-button {
