@@ -79,7 +79,7 @@ h4 {
 }
 
 html {
-  padding: 1% 4% 4% 4%;
+  padding: 1% 4% 6% 4%;
   max-width: 1078px;
   margin: auto;
 }
@@ -154,6 +154,30 @@ a.orange-text:visited {
   margin: 2px;
   padding: 1px;
   text-decoration: underline;
+}
+
+.return-button {
+  background-color: #F05D22;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.return-holder {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15%;
+  bottom: 10px;
+  text-align: center;
+  display: none;
+}
+
+.return-button .white-text {
+  margin: 0;
 }
 
 .side {
