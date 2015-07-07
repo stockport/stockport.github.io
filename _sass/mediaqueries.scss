@@ -130,10 +130,15 @@
 @media all and (max-width: 991px) {
   .hotline {
     margin-left: 5px;
-    margin-right:5px;
+    margin-right: 5px;
   }
 }
 
+@media all and (min-width: 992px) {
+  .hotline {
+    left: -5px;
+  }
+}
 
 @media all and (max-width: 994px) {
   .scales {
