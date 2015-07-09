@@ -1,13 +1,12 @@
 # Site settings
 title: Stockport Suicide Prevention
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://stockport.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 
 prose:
-  ignore: [".editorconfig", ".gitignore", "_config.yml", "README.md", "/_sass"]
+  ignore: [".editorconfig", ".gitignore", "_config.yml", "README.md", "/_sass", "/_layouts"]
   siteurl: "http://stockport.github.io"
-  media: "/assets/img/"
+  media: "assets/img"
