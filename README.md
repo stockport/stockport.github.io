@@ -5,7 +5,7 @@ This project aims to provide an online source of information and support for tho
 
 The site was primarily designed for desktop use but effort has been put in to make it responsive and accessible on a variety of screen sizes and devices. Tools including [Flexbox](http://flexboxin5.com/) (where browser compatible), [Bootstrap](http://getbootstrap.com/), [media queries](http://mediaqueri.es/) and [vanilla](http://uncyclopedia.wikia.com/wiki/Vanilla) CSS have been utilised to ensure none of the content, functionality or readibility is sacrified when viewed using a smaller device.
 
-This project will be published using [GitHub Pages](http://stockport.github.io/), and developed using Jekyll for HTML & CSS templating. The project also makes use of the prose.io content editing system to simplify the contribution process for collaborators.  
+This project will be published using [GitHub Pages](http://stockport.github.io/), and developed using Jekyll for HTML & CSS templating. The project also makes use of the [prose.io](https://github.com/prose/prose) content editing system to simplify the contribution process for collaborators.  
 
 To run a copy of this project locally:
 
