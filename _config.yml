@@ -7,6 +7,6 @@ url: "http://stockport.github.io" # the base hostname & protocol for your site
 markdown: kramdown
 
 prose:
-  ignore: [".editorconfig", ".gitignore", "_config.yml", "README.md", "/_sass", "/_layouts"]
+  ignore: [".editorconfig", ".gitignore", "_config.yml", "README.md", "/_sass", "/_layouts", "/assets/lib", "/assets/css"]
   siteurl: "http://stockport.github.io"
-  media: "assets/img"
+  media: "/assets/img"
