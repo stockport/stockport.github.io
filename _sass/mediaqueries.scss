@@ -5,19 +5,30 @@
   .bubble {
     display: none;
   }
+  .print-box {
+    display: none;
+  }
+  .print-link {
+    display: none;
+  }
+  .print-text {
+    display: none;
+  }
   .safety-mark {
     display: none;
   }
   .safety-text {
+  display: none;
   font-size: 14px;
   padding: 5px;
+  height: 200px;
+  width: 300px;
   }
   .safety-header {
   font-weight: bold;
   }
   .safety-box {
-    height: 300px;
-    width: 300px;
+
   }
   .safety-description {
     display: none;
