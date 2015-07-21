@@ -10,6 +10,10 @@
   height: 30px;
 }
 
+.btn.btn-default.click-here:focus {
+  outline: none;
+}
+
 .home-message p {
   font-size: 14px;
   font-weight: bold;
