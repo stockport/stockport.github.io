@@ -213,8 +213,10 @@ a.orange-text:visited {
 }
 
 .wrapped {
+  word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
+  overflow: auto;
 }
 
 .yellow {
