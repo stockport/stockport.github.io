@@ -14,7 +14,7 @@
   .print-text {
     display: none;
   }
-  .safety-mark {
+  img.safety-mark {
     display: none;
   }
   .safety-text {
@@ -28,12 +28,12 @@
   font-weight: bold;
   }
   .safety-box {
-
+    /*max-height: 275px;*/
   }
   .safety-description {
     display: none;
   }
-  @page {size: landscape}
+  @page { size: landscape }
 }
 
 @media all and (max-width: 600px) {
@@ -101,6 +101,10 @@
 
   .option-button {
     display: none;
+  }
+
+  .click-here {
+    display: block;
   }
 
   .option-button-mobile {
