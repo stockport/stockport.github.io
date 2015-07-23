@@ -31,6 +31,7 @@
 
 .safety-box {
   display: inline-block;
+  vertical-align: top;
   padding: 5px;
   height: 300px;
   width: 300px;
@@ -55,17 +56,19 @@
 
 .safety-header {
   color: #01807E;
+  height: 40px;
   font-size: 14px;
   text-align: center;
   display: inline-block;
-  width: 80%;
+  width: 85%;
 }
 
 .safety-mark {
   max-height: 20px;
   max-width: 20px;
   display: inline-block;
-  margin-left: 10px;
+  vertical-align: bottom;
+  margin-bottom: 5px;
 }
 
 .safety-mark:hover ~.safety-tooltip {
@@ -73,7 +76,7 @@
 }
 
 .safety-mark:hover ~.safety-text {
-
+  display: none;
 }
 
 .safety-ring {
@@ -97,26 +100,19 @@
 }
 
 .safety-tooltip {
-  position: fixed;
   display: none;
-  top: 50%;
-  left: 50%;
-  margin-top: -7%;
-  margin-left: -14%;
-  height: 30%;
-  width: 30%;
+  height: 80%;
   border-radius: 15px;
-  border: 2px solid white;
   background-color: #01807E;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 5px;;
   box-sizing: border-box;
 }
 
 .tip-text {
   display: table-cell;
   vertical-align: middle;
-  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-
