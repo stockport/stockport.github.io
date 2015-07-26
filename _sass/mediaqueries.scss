@@ -2,37 +2,47 @@
   .site-header {
     display: none;
   }
+
   .bubble {
     display: none;
   }
+
   .print-box {
     display: none;
   }
+
   .print-link {
     display: none;
   }
+
   .print-text {
     display: none;
   }
+
   img.safety-mark {
     display: none;
   }
+
   .safety-text {
-  display: none;
-  font-size: 14px;
-  padding: 5px;
-  height: 200px;
-  width: 300px;
+    display: none;
+    font-size: 14px;
+    padding: 5px;
+    height: 200px;
+    width: 300px;
   }
+
   .safety-header {
   font-weight: bold;
   }
+
   .safety-box {
     /*max-height: 275px;*/
   }
+
   .safety-description {
     display: none;
   }
+
   @page { size: landscape }
 }
 
@@ -42,12 +52,15 @@
     margin: auto;
     margin-bottom: 10px;
   }
+
   .preview-text {
     max-width: 100%;
   }
+
   div.safety-box {
     margin: auto;
   }
+
   .return-holder {
     display: block;
   }
@@ -73,7 +86,6 @@
     margin: auto;
     margin-bottom: 10%;
     display: table;
-    max-height: 100px;
   }
 
   .home-message {
@@ -117,7 +129,7 @@
 
   p.option-text {
     min-height: 80px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-left: 0px;
     margin-bottom: 0px;
     display: table-cell;
